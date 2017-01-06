@@ -1,0 +1,29 @@
+page-welcome{
+
+}
+
+.step-title.activate{
+  background-color: #0c60ee;
+  border: 1px solid #0c60ee;
+}
+.step-title{
+  font-weight: 900;
+  font-size: 4px;
+  background-color: #8e9093;
+  border: 1px solid white;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+.row.step{
+  width: 90%;
+  margin: auto;
+  //background-image:url('../../assets/images/line.png');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:80%;
+}
+
+.round-button{
+  border-radius: 5px;
+}

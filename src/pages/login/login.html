@@ -1,0 +1,40 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content align="center" padding>
+
+  <div style="margin-top: 50px; margin-bottom: 20px;">
+    <ion-card-content>
+      <img alt="" width="70%"/>
+    </ion-card-content>
+  </div>
+
+  <form #loginForm="ngForm" (ngSubmit)="userLogin()">
+
+    <ion-list style="margin-bottom: 25%;">
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input name="username" type="text" [(ngModel)]="authUserModel.username" required="true"></ion-input>
+        <!--ion-input name="username" type="text" [(ngModel)]="authUserModel.username"></ion-input-->
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input name="password" type="password" [(ngModel)]="authUserModel.password" required="true"></ion-input>
+        <!--ion-input name="password" type="password" [(ngModel)]="authUserModel.password"></ion-input-->
+      </ion-item>
+    </ion-list>
+
+    <div style="margin-bottom: 8%;">
+      <button ion-button type="submit" color="light" full > Log in </button>
+    </div>
+
+  </form>
+
+
+  <!--div style="margin-bottom: 10%">
+    <a href="#" [navPush]="signupPage"> Or create an account </a>
+  </div-->
+
+</ion-content>

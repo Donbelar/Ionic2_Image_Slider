@@ -1,0 +1,55 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+  <div align="center" [ngSwitch]="index">
+    <div *ngSwitchCase="1">
+      <img src="../../assets/images/step1.png" style="width: 70%; margin-top: 30%;" >
+      <h1><strong>Stay connected</strong></h1>
+      <h4 style="color: #b5bdc7">Track your team's progress and stay<br> connected from anywhere.</h4>
+
+      <div class="row step">
+        <div class="col col-20">
+          <span class="step-title activate" style="margin-right: 20px;"></span>
+          <span class="step-title" style="margin-right: 20px;"></span>
+          <span class="step-title"></span>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="2">
+      <img src="../../assets/images/step2.png" style="width: 70%; margin-top: 30%;" >
+      <h1><strong>Responsd quickly</strong></h1>
+      <h4 style="color: #b5bdc7">Collaborate with your team when<br> you're on the go.</h4>
+
+      <div class="row step">
+        <div class="col col-20">
+          <span class="step-title activate" style="margin-right: 20px;"></span>
+          <span class="step-title activate" style="margin-right: 20px;"></span>
+          <span class="step-title"></span>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="3">
+      <img src="../../assets/images/step3.png" style="width: 70%; margin-top: 30%;" >
+      <h1><strong>Create issues</strong></h1>
+      <h4 style="color: #b5bdc7">Create, track, share, and assign<br> issues wherever, whenever.</h4>
+
+      <div class="row step">
+        <div class="col col-20">
+          <span class="step-title activate" style="margin-right: 20px;"></span>
+          <span class="step-title activate" style="margin-right: 20px;"></span>
+          <span class="step-title activate"></span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div style="margin-top: 30px; padding-left: 30px; padding-right: 30px;">
+      <button ion-button="" full (click)="plusIndex()" class="round-button">Get started</button>
+    </div>
+
+  </div>
+
+</ion-content>
